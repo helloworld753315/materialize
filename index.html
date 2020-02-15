@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamburger</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <!--navbar（全体共通）-->
+  <div class=" navbar-fixed">
+    <nav class="nav-wraper  deep-purple">
+      <div class="cotainer">
+        <!--ハンバーガーメニューのアイコン-->
+        <a href="#" class="sidenav-trigger right" data-target="mobile-links">
+          <i class="material-icons">menu</i>
+        </a>
+
+
+        <div class="menu">
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#" class="grey-text text-lighten-3">Contents1</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Contents2</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Contents3</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Contents4</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-links">
+
+    <a href="#" class="sidenav-close " data-target="mobile-links">
+      <i class="material-icons close-icon ">close</i>
+    </a>
+
+    <div class="menu">
+      <li><a href="#">Contents1</a></li>
+      <li><a href="#">Contents2</a></li>
+      <li><a href="#">Contents3</a></li>
+      <li><a href="#">Contents4</a></li>
+    </div>
+
+  </ul>
+
+  <script src="jquery.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav({
+        edge: 'right',
+      });
+    })
+  </script>
+</body>
+
+</html>
